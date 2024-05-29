@@ -1,0 +1,160 @@
+.container-row{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 2rem;
+    overflow: auto;
+}
+
+.principal, .our-skills{
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid #eeeeee;
+}
+
+.banner img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.about-us{
+    margin: 2rem 0;
+}
+
+.about-us h2, .teams-text{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    
+}
+
+.text-about-us{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #ababab;
+    margin-bottom: 3rem;
+    
+}
+.people-group{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.people-image img{
+    width: 320px;
+    height: 300px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.skill-area{
+    margin-bottom: 3rem;
+}
+
+.skill-indicator{
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 40px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    position: relative;
+}
+
+.frontend, .photoshop, .wordpress, .plugins{
+    height: 100%;
+    background-color: #c2c2c2;
+}
+
+.frontend{
+    width: 71%;
+}
+
+.photoshop{
+    width: 85%;
+}
+
+.wordpress{
+    width: 76%;
+}
+
+.plugins{
+    width: 53%;
+}
+
+.person-comment{
+    display: flex; 
+}
+.data-person{
+    width: 100%;
+    height: 150px;
+    background-color: #ffed27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 3rem;
+    font-style: italic;
+}
+
+.person-comment .person{
+    width: 100px;
+    height: 100px;
+}
+
+.clients-comments .comment{
+    padding: 2rem;
+    border: 1px solid #eeeeee;
+    font-size: 1.6rem;
+    color: #ababab;
+}
+
+.service-list{
+    padding: 2rem;
+    list-style: outside;
+    line-height: 2.5rem;
+}
+
+.service-item{
+    color: #a5acb1;
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .container-row{
+        grid-template-columns: auto;
+    }
+    .people-group{
+        justify-content: center;
+    }
+    .people-image img{
+        width: 100%;
+        height: auto;
+    }
+    .our-skills{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 1417px){
+    .people-image img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1440px){
+    .our-skills{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 1920px){
+    .our-skills{
+        width: 600px;
+    }
+    
+}
