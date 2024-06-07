@@ -4,6 +4,7 @@
     grid-template-columns: repeat(2, auto);
     padding: 2rem;
     overflow: auto;
+    transition: all 0.5s ease-in-out;
 }
 
 .principal, .our-skills{
@@ -34,6 +35,7 @@
     line-height: 2;
     color: #ababab;
     margin-bottom: 3rem;
+    transition: all 0.5s ease-in-out;
     
 }
 .people-group{
@@ -72,18 +74,22 @@
 
 .frontend{
     width: 71%;
+    transition: all 0.5s ease-in-out;
 }
 
 .photoshop{
     width: 85%;
+    transition: all 0.5s ease-in-out;
 }
 
 .wordpress{
     width: 76%;
+    transition: all 0.5s ease-in-out;
 }
 
 .plugins{
     width: 53%;
+    transition: all 0.5s ease-in-out;
 }
 
 .person-comment{
@@ -142,19 +148,61 @@
 }
 
 @media screen and (max-width: 1417px){
-    .people-image img{
-        width: 100%;
-        height: auto;
+    .people-group{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        transition: all 0.5s ease-in-out;
     }
-}
-@media screen and (max-width: 1440px){
-    .our-skills{
-        width: 500px;
+    .people-image img{
+        width: 320px;
+        height: 200px;
+        object-fit: fill;
+        transition: all 0.5s ease-in-out;
     }
 }
 @media screen and (max-width: 1920px){
+    .people-group{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        transition: all 0.5s ease-in-out;
+    }
     .our-skills{
-        width: 600px;
+        width: 500px;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .people-group{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        transition: all 0.5s ease-in-out;
+    }
+    .clients-comments .comment, .text-about-us{
+        font-size: 1rem;
+        transition: all 0.5s ease-in-out;
+    }
+}
+@media screen and (max-width: 550px) {
+    .people-group{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        transition: all 0.5s ease-in-out;
+    }
+    .data-person{
+        font-size: 1.4rem;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .data-person{
+        font-size: 1.2rem;
+        transition: all 0.5s ease-in-out;
     }
     
 }

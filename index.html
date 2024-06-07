@@ -72,7 +72,15 @@
         <main class="container">
             <section class="col">
                 <section class="card">
-                    <img src="./assets/img/home/gallery.jpg" alt="gallery">
+                    <div id="carousel-images">
+                        <img src="./assets/img/home/gallery.jpg" class="carousel-item active" alt="gallery">
+                        <img src="./assets/img/home/gallery2.jpg" class="carousel-item" alt="gallery">
+                        <img src="./assets/img/home/gallery3.jpg" class="carousel-item" alt="gallery">
+                        <div class="indicator-arrows">
+                            <span id="prev-btn"><i class="fa-solid fa-arrow-left"></i></span>
+                            <span id="next-btn"><i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
                     <div class="card-body">
                         <h2>Galery Post Example</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit nihil cupiditate iusto nobis ex facilis eius possimus numquam, laboriosam, quisquam, ipsum est hic temporibus expedita quaerat placeat voluptatibus! Dolores, enim?</p>
@@ -151,5 +159,6 @@
     </div>
     <script src="https://kit.fontawesome.com/638cc27493.js" crossorigin="anonymous"></script>
     <script src="./assets/js/global/menuAnimation.js"></script>
+    <script src="./assets/js/carousel.js"></script>
 </body>
 </html>
