@@ -4,10 +4,10 @@
     background-color: #a8a8a9;
 }
 
-.container::-webkit-scrollbar {
+.container::-webkit-scrollbar, .global-container::-webkit-scrollbar, .principal::-webkit-scrollbar {
     width: 5px;
   }
-  .container::-webkit-scrollbar-thumb {
+  .container::-webkit-scrollbar-thumb,  .global-container::-webkit-scrollbar-thumb, .principal::-webkit-scrollbar-thumb {
     height: 10px;
     width: 10px;
     background-color: rgb(56, 56, 56);
